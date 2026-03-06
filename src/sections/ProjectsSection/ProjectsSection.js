@@ -14,7 +14,6 @@ const ProjectsSection = () => {
       <ol className={styles.projectsList}>
         <ProjectCard
           projectName={"Punchcard"}
-          projectLink={"https://punchcard.work"}
           description={"Shift scheduling mobile application in which employees are able to build their own" +
             " schedules through claiming, transferring, and dropping posted shifts. " +
             "I designed and built the front end of the application."}

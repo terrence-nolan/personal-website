@@ -16,22 +16,30 @@ export const ProjectCard = ({
     <li className={styles.cardContainer}>
       <div className={styles.card}>
         <div className={styles.info}>
-          <div className={styles.cardHeader}>
-            <a
-              href={projectLink}
-              target={"_blank"}
-              rel="noopener noreferrer"
-              className={styles.projectLink}
-              title={projectName}
-            >
-            <span className={styles.headerContainer}>
-              <span className={styles.headerText}>{projectName}</span>
-              <span className={styles.arrowIconContainer}>
-                <FontAwesomeIcon icon={faArrowUpRightFromSquare} className={styles.arrowIcon} />
+          {projectLink ? (
+            <div className={styles.cardHeader}>
+              <a
+                href={projectLink}
+                target={"_blank"}
+                rel="noopener noreferrer"
+                className={styles.projectLink}
+                title={projectName}
+              >
+              <span className={styles.headerContainer}>
+                <span className={styles.headerText}>{projectName}</span>
+                <span className={styles.arrowIconContainer}>
+                  <FontAwesomeIcon icon={faArrowUpRightFromSquare} className={styles.arrowIcon} />
+                </span>
               </span>
-            </span>
-            </a>
-          </div>
+              </a>
+            </div>
+          ) : (
+            <div className={styles.cardHeader}>
+              <span className={styles.headerContainer}>
+                <span className={styles.headerText}>{projectName}</span>
+              </span>
+            </div>
+          )}
           <p className={styles.description}>
             {description}
           </p>

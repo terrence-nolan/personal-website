@@ -4,8 +4,8 @@ import {ProjectCard} from "../../components/ProjectCard/ProjectCard";
 
 const ProjectsSection = () => {
 
-  const punchcardSkills = ["React Native", "JavaScript", "CSS", "Expo Go", "Figma", "MongoDB", "Firebase"]
-  const v1Skills = ["React.js", "JavaScript", "CSS", "Firebase", "Vercel"]
+  const punchcardSkills = ["React Native", "JavaScript", "CSS", "Expo Go", "Figma", "MongoDB"]
+  const v1Skills = ["React.js", "JavaScript", "CSS", "Vercel"]
 
   return (
     <section className={styles.projectsMain}>
@@ -25,7 +25,7 @@ const ProjectsSection = () => {
           projectName={"terrencenolan.com V1"}
           projectLink={"https://terrence-nolan-v1.vercel.app/"}
           description={"The first version of my personal website. " +
-            "Built with React and CSS. Originally hosted on Firebase. Now hosted on Vercel."}
+            "Built with React and CSS. Hosted on Vercel."}
           otherLinks={["https://github.com/terrence-nolan/terrence-nolan"]}
           otherLinksText={["GitHub"]}
           skills={v1Skills}

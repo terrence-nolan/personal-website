@@ -4,7 +4,7 @@ import {SkillsList} from "../../components/SkillsList/SkillsList";
 
 export const SkillsAndTechSection = () => {
   const languages = ["JavaScript", "TypeScript", "HTML/CSS", "SQL", "Java", "Python"]
-  const toolsAndFrameworks = ["React.js", "React Native", "Expo Go", "Jest", "Git", "Jupyter Notebook", "Firebase", "Docker", "Jenkins", "Figma"]
+  const toolsAndFrameworks = ["React.js", "React Native", "Expo Go", "Jest", "Git", "Jupyter Notebook", "Docker", "Jenkins", "Figma"]
 
   return (
     <main className={styles.sectionContainer}>

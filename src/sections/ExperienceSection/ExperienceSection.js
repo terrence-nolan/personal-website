@@ -4,20 +4,29 @@ import { ExperienceCard } from "../../components/ExperienceCard/ExperienceCard";
 
 const ExperienceSection = () => {
 
+  const chewyFullTimeDescription = ["Led frontend development for customer-facing Product Detail Page (PDP) experiences, owning technical design, implementation, experimentation, and cross-team integrations across Chewy's high-traffic e-commerce platform.",
+    "Led end-to-end development of Ship Once with Autoship on the Product Detail Page, building a new Buy Once call-to-action, post-add-to-cart flyout, and integrations with multiple internal APIs while coordinating implementation across the PDP and Autoship teams; drove 12.5K incremental weekly units and $12M annualized revenue.",
+    "Designed and implemented reusable React components powering Chewy+ membership experiences, including SmartShelf upsells and free shipping trackers, while consolidating duplicate UI architecture and integrating Loyalty APIs; contributed to an increase of 2.4K weekly Chewy+ signups.",
+    "Built reusable pricing and promotional components for Autoship experiences, contributing to experiments that increased Autoship enrollment by 8-11K weekly signups while maintaining checkout conversion.",
+    "Architected and implemented AWS Feature Store with the PDP platform to access personalized user purchase-history, designing new infrastructure and reusable UI components that supported an experiment resulting in increased average selling price.",
+    "Migrated PDP authentication services from legacy infrastructure to Chewy's new Guest Service during the company's EKS modernization, architecting frontend integration changes and resolving production issues involving bot traffic and guest session management.",
+    "Implemented an A/B experiment for Private Brand product pages, delivering feature-flagged architecture that increased PDP conversion by 19 bps, add-to-cart success by 42 bps, and Chewy Composite Value by 4.31%.",
+    "Built the Autoship post-add-to-cart experience from the ground up for authenticated customers, increasing conversion by 14 bps while maintaining Autoship adoption and supporting experimentation across customer segments."
+  ];
+
   const chewyFullTimeSkills = ["React", "TypeScript", "HTML", "SCSS", "Jest", "AWS", "Jenkins", "DataDog", "Dynatrace"];
   
   const fiveStonesDescription = [
-    "Rebuilt the video player component on the Annunciate app to allow for proper fullscreen and rotations on both mobile and tablet devices.",
-    "Overhauled the content search functionality in Annunciate to provide users with an efficient experience in searching for desired content.",
+    "Developed customer-facing features and resolved production issues for Annunciate.io, a white-label multimedia SaaS platform, improving usability and administrative workflows.",
+    "Redesigned the platform's Elasticsearch-powered content search by configuring custom analyzers and field-matching strategies, improving search relevance and discoverability across multimedia content.",
+    "Enhanced user experience by resolving video playback issues, improving Open Graph sharing through dynamic metadata and image optimization, and implementing role-based administrative UI features."
   ];
   const fiveStonesSkills = ["TypeScript", "React", "React Native", "Docker", "SQL", "Elastic Search", "React Admin"];
 
   const chewyInternshipDescription = [
-    "Extracted the My Pet Health page UI from microsite framework and implemented it into a Single Page Application which resulted in performance increase of 160% according to Google Lighthouse.",
-    "Deployment of the SPA generated $14k in annual savings through the elimination of an unnecessary AWS Elastic Kubernetes Service instance.",
-    "Enhanced user experience through improvement of HTML accessibility and incorporation of company design system.",
-    "Gained experience working in an agile workflow system of sprints and epics.",
-    "Initiated discussions with members of the product team to discuss certain design ideas and suggest additional capabilities for the page and its components.",
+    "Migrated the My Pet Health experience from a legacy microsite into a React single-page application, improving Google Lighthouse performance by 160% while modernizing the customer experience.",
+    "Eliminated an unnecessary AWS Elastic Kubernetes Service (EKS) deployment through SPA adoption, generating approximately $14K in annual infrastructure savings.",
+    "Improved accessibility, expanded Jest unit test coverage to 78%, and partnered with product stakeholders to refine UX and deliver production-ready React components."
   ];
   const chewyInternshipSkills = ["React", "TypeScript", "HTML", "SCSS", "Jest", "Docker", "Jenkins"];
 
@@ -46,6 +55,7 @@ const ExperienceSection = () => {
           startDate={"DEC 2024"}
           endDate={"PRESENT"}
           positionTitle={"Software Engineer I"}
+          description={chewyFullTimeDescription}
           skills={chewyFullTimeSkills}
         />
         <ExperienceCard

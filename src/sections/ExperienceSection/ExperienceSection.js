@@ -4,20 +4,22 @@ import { ExperienceCard } from "../../components/ExperienceCard/ExperienceCard";
 
 const ExperienceSection = () => {
 
+  const chewyFullTimeSkills = ["React", "TypeScript", "HTML", "SCSS", "Jest", "AWS", "Jenkins", "DataDog", "Dynatrace"];
+  
   const fiveStonesDescription = [
     "Rebuilt the video player component on the Annunciate app to allow for proper fullscreen and rotations on both mobile and tablet devices.",
     "Overhauled the content search functionality in Annunciate to provide users with an efficient experience in searching for desired content.",
   ];
   const fiveStonesSkills = ["TypeScript", "React", "React Native", "Docker", "SQL", "Elastic Search", "React Admin"];
 
-  const chewyDescription1 = [
+  const chewyInternshipDescription = [
     "Extracted the My Pet Health page UI from microsite framework and implemented it into a Single Page Application which resulted in performance increase of 160% according to Google Lighthouse.",
     "Deployment of the SPA generated $14k in annual savings through the elimination of an unnecessary AWS Elastic Kubernetes Service instance.",
     "Enhanced user experience through improvement of HTML accessibility and incorporation of company design system.",
     "Gained experience working in an agile workflow system of sprints and epics.",
     "Initiated discussions with members of the product team to discuss certain design ideas and suggest additional capabilities for the page and its components.",
   ];
-  const chewySkills1 = ["React", "TypeScript", "HTML", "SCSS", "Jest", "Docker", "Jenkins"];
+  const chewyInternshipSkills = ["React", "TypeScript", "HTML", "SCSS", "Jest", "Docker", "Jenkins"];
 
   const augustinianDescription = [
     "Redesigned the appearance of the Institute of Augustine Spirituality website and transferred the site from from Joomla to Wix in English, Italian, and Spanish.",
@@ -44,6 +46,7 @@ const ExperienceSection = () => {
           startDate={"DEC 2024"}
           endDate={"PRESENT"}
           positionTitle={"Software Engineer I"}
+          skills={chewyFullTimeSkills}
         />
         <ExperienceCard
           companyName={"5 Stones"}
@@ -64,10 +67,10 @@ const ExperienceSection = () => {
           startDate={"JUN 2023"}
           endDate={"AUG 2023"}
           positionTitle={"Software Engineering Intern"}
-          description={chewyDescription1}
+          description={chewyInternshipDescription}
           links={["https://www.chewy.com/pethealth/"]}
           linkText={["My Pet Health"]}
-          skills={chewySkills1}
+          skills={chewyInternshipSkills}
         />
         <ExperienceCard
           companyName={"Roman Augustinian Curia"}
